@@ -35,7 +35,6 @@
                 </div>
                 <div class="floating-check">✓</div>
             </div>
-            <div class="login-footnote">Satu dashboard untuk kegiatan belajar yang lebih tertata.</div>
         </section>
 
         <section class="login-panel">

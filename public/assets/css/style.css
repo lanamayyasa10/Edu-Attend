@@ -301,12 +301,7 @@ button { cursor: pointer; }
 .login-layout { min-height: 100vh; display: grid; grid-template-columns: 1.04fr .96fr; position: relative; z-index: 1; }
 .login-intro { position: relative; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; padding: 45px 8vw 28px; color: #fff; background: linear-gradient(145deg, #152847 0%, #1e3966 55%, #2d5599 100%); }
 .brand-light { padding: 0; }
-.intro-copy {
-    position: relative;
-    z-index: 2;
-    max-width: 490px;
-    margin: -2px 0 0;
-}
+.intro-copy { position: relative; z-index: 2; max-width: 490px; margin: -60px 0 0; }
 .intro-tag { color: #a9c2ff; font-size: 9px; font-weight: 700; letter-spacing: 1.6px; }
 .intro-copy h1 { margin: 16px 0 13px; font: 800 clamp(30px,3.3vw,46px)/1.22 "Plus Jakarta Sans",sans-serif; letter-spacing: -1.8px; }
 .intro-copy h1 em { color: #91b1ff; font-style: normal; }
@@ -372,7 +367,7 @@ button { cursor: pointer; }
     .login-layout { grid-template-columns: .9fr 1.1fr; }
     .login-intro { padding-left: 6vw; padding-right: 5vw; }
     .login-panel { padding: 35px; }
-    .intro-copy { margin-top: 75px; }
+    .intro-copy { margin-top: -45px; }
 }
 @media (max-width: 650px) {
     .topbar { height: 63px; padding: 0 15px; }
@@ -423,4 +418,85 @@ button { cursor: pointer; }
     .main-content { padding: 0; }
     .panel { border: 0; box-shadow: none; padding: 0; }
     .data-table th, .data-table td { color: #222 !important; }
+}
+
+
+/* -------------------------------------------------------
+   LOGIN INTRO — centered and responsive
+   ------------------------------------------------------- */
+.login-intro {
+    justify-content: center;
+    gap: 30px;
+    padding: 45px clamp(24px, 6vw, 90px);
+}
+.intro-copy {
+    margin: 0;
+}
+.login-illustration {
+    margin: 0 auto;
+}
+.login-footnote {
+    display: none;
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+    .login-intro {
+        gap: 24px;
+        padding: 32px clamp(22px, 4vw, 48px);
+    }
+    .intro-copy h1 {
+        font-size: clamp(27px, 3.2vw, 38px);
+    }
+    .login-illustration {
+        width: min(320px, 95%);
+        height: 190px;
+    }
+}
+
+@media (max-width: 650px) {
+    .login-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .login-intro {
+        display: flex;
+        min-height: auto;
+        align-items: center;
+        gap: 16px;
+        padding: 30px 24px 34px;
+        text-align: center;
+    }
+    .brand-light {
+        justify-content: center;
+    }
+    .intro-copy {
+        max-width: 440px;
+        margin: 0;
+        text-align: center;
+    }
+    .intro-copy h1 {
+        margin: 0 0 10px;
+        font-size: clamp(25px, 6vw, 32px);
+        letter-spacing: -1px;
+    }
+    .intro-copy p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    .login-illustration {
+        display: none;
+    }
+    .login-panel {
+        min-height: auto;
+        padding: 32px 24px 38px;
+    }
+    .mobile-brand {
+        display: none;
+    }
+    .login-form-wrap {
+        max-width: 420px;
+    }
+    .login-copyright {
+        margin-top: 26px;
+    }
 }
