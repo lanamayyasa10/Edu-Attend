@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 require_once __DIR__ . '/../../core/Model.php';
@@ -38,3 +39,43 @@ class KelasModel extends Model
         return $this->executePrepared('DELETE FROM kelas WHERE id = ?', 'i', [$id]);
     }
 }
+=======
+<?php
+
+require_once __DIR__ . "/../../core/Model.php";
+
+class KelasModel extends Model
+{
+
+    /**
+     * Ambil semua kelas
+     */
+    public function getAll()
+    {
+        $sql = "SELECT *
+                FROM kelas
+                ORDER BY nama_kelas ASC";
+
+        $result = $this->query($sql);
+
+        return $this->fetchAll($result);
+    }
+
+    /**
+     * Ambil kelas berdasarkan ID
+     */
+    public function getById($id)
+    {
+        $id = (int)$id;
+
+        $sql = "SELECT *
+                FROM kelas
+                WHERE id='$id'";
+
+        $result = $this->query($sql);
+
+        return $this->fetch($result);
+    }
+
+}
+>>>>>>> 44d0f02d7378dfe1ba506b3ef4eeb64afd0a9587
