@@ -500,3 +500,59 @@ button { cursor: pointer; }
         margin-top: 26px;
     }
 }
+
+
+/* Mobile login: hide the blue introduction panel and use a clean white layout */
+@media (max-width: 650px) {
+    body.login-page {
+        min-height: 100svh;
+        background: #fff;
+    }
+
+    .login-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 100svh;
+    }
+
+    .login-intro {
+        display: none !important;
+    }
+
+    .login-panel {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        min-height: 100svh;
+        padding: 34px 24px 28px;
+        background: #fff;
+    }
+
+    .login-form-wrap {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 38px;
+        color: #1f3150;
+        font: 800 17px "Plus Jakarta Sans", sans-serif;
+    }
+
+    .mobile-brand .brand-mark {
+        width: 35px;
+        height: 35px;
+        flex: 0 0 35px;
+    }
+
+    .login-form-wrap h2 {
+        font-size: 25px;
+    }
+
+    .login-copyright {
+        margin-top: 30px;
+    }
+}
