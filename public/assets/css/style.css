@@ -301,7 +301,12 @@ button { cursor: pointer; }
 .login-layout { min-height: 100vh; display: grid; grid-template-columns: 1.04fr .96fr; position: relative; z-index: 1; }
 .login-intro { position: relative; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; padding: 45px 8vw 28px; color: #fff; background: linear-gradient(145deg, #152847 0%, #1e3966 55%, #2d5599 100%); }
 .brand-light { padding: 0; }
-.intro-copy { position: relative; z-index: 2; max-width: 490px; margin: 90px 0 0; }
+.intro-copy {
+    position: relative;
+    z-index: 2;
+    max-width: 490px;
+    margin: -2px 0 0;
+}
 .intro-tag { color: #a9c2ff; font-size: 9px; font-weight: 700; letter-spacing: 1.6px; }
 .intro-copy h1 { margin: 16px 0 13px; font: 800 clamp(30px,3.3vw,46px)/1.22 "Plus Jakarta Sans",sans-serif; letter-spacing: -1.8px; }
 .intro-copy h1 em { color: #91b1ff; font-style: normal; }
