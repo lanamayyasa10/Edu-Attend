@@ -44,7 +44,6 @@
                     <span class="brand-mark"><svg viewBox="0 0 32 32"><path d="M16 3 28 9.5v13L16 29 4 22.5v-13L16 3Z" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m10 16 4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     <strong>EduAttend</strong>
                 </div>
-                <span class="form-kicker">SELAMAT DATANG KEMBALI</span>
                 <h2>Masuk ke akun</h2>
                 <p class="login-subtitle">Masukkan detail akun administrator untuk melanjutkan.</p>
 
